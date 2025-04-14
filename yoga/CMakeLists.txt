@@ -22,8 +22,8 @@ file(GLOB SOURCES CONFIGURE_DEPENDS
     ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/**/*.cpp)
 
-# add_library(yogacore STATIC ${SOURCES})
-add_library(yogacore SHARED ${SOURCES})
+add_library(yogacore STATIC ${SOURCES})
+# add_library(yogacore SHARED ${SOURCES})
 
 # Yoga conditionally uses <android/log> when building for Android
 if (ANDROID)
